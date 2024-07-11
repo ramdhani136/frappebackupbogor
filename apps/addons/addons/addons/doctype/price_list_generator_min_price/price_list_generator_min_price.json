@@ -1,0 +1,50 @@
+{
+ "_liked_by": "[\"arut@das.com\"]",
+ "actions": [],
+ "creation": "2021-04-23 16:11:59.333509",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "min_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "min_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Minimum Price",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-20 07:58:44.603185",
+ "modified_by": "Administrator",
+ "module": "addons",
+ "name": "Price List Generator Min Price",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

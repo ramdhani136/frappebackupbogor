@@ -1,0 +1,261 @@
+{
+ "_liked_by": "[\"arut@das.com\"]",
+ "actions": [],
+ "creation": "2021-04-27 11:15:43.689982",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "is_use_qr_code",
+  "rencana_bongkar_section",
+  "check_rencana_bongkar",
+  "keterangan_rencana_bongkar",
+  "check_stock_section",
+  "qty_rencana_terima",
+  "qr_qty_rencana_terima",
+  "qr_qty_rencana_terima_qty",
+  "qr_manual_qty_rencana_terima",
+  "checking_stock",
+  "keterangan_checking_stock",
+  "check_terima_section",
+  "check_qty_terima",
+  "qty_terima",
+  "qr_qty_terima",
+  "qr_qty_terima_qty",
+  "qr_manual_qty_terima",
+  "keterangan_terima",
+  "review_section",
+  "check_review",
+  "keterangan_review",
+  "konfirmasi_section",
+  "check_konfirmasi",
+  "keterangan_konfirmasi",
+  "sumber_document",
+  "sumber_document_name"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_use_qr_code",
+   "fieldtype": "Check",
+   "label": "Is Use QR Code"
+  },
+  {
+   "fieldname": "rencana_bongkar_section",
+   "fieldtype": "Section Break",
+   "label": "Rencana Bongkar"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "check_rencana_bongkar",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Check Rencana Bongkar",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_1 == 0"
+  },
+  {
+   "fieldname": "keterangan_rencana_bongkar",
+   "fieldtype": "Text",
+   "label": "Keterangan Rencana Bongkar",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_1 == 0"
+  },
+  {
+   "fieldname": "check_stock_section",
+   "fieldtype": "Section Break",
+   "label": "Check Stock"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty_rencana_terima",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Rencana Terima",
+   "no_copy": 1,
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_2 == 0"
+  },
+  {
+   "fieldname": "qr_qty_rencana_terima",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "QR Qty Rencana Terima",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_qty_rencana_terima_qty",
+   "fieldtype": "Small Text",
+   "label": "QR Qty Rencana Terima + Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_manual_qty_rencana_terima",
+   "fieldtype": "Small Text",
+   "label": "QR Manual Qty Rencana Terima",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "checking_stock",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Checking Stock",
+   "no_copy": 1,
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_2 == 0"
+  },
+  {
+   "fieldname": "keterangan_checking_stock",
+   "fieldtype": "Text",
+   "label": "Keterangan Checking Stock",
+   "no_copy": 1,
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_2 == 0"
+  },
+  {
+   "fieldname": "check_terima_section",
+   "fieldtype": "Section Break",
+   "label": "Check Terima"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "check_qty_terima",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Check Qty Terima",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_3 == 0"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty_terima",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Terima",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_3 == 0"
+  },
+  {
+   "fieldname": "qr_qty_terima",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "QR Qty Terima",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_qty_terima_qty",
+   "fieldtype": "Small Text",
+   "label": "QR Qty Terima + Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_manual_qty_terima",
+   "fieldtype": "Small Text",
+   "label": "QR Manual Qty Terima",
+   "read_only": 1
+  },
+  {
+   "fieldname": "keterangan_terima",
+   "fieldtype": "Text",
+   "label": "Keterangan Terima",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_3 == 0"
+  },
+  {
+   "fieldname": "review_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Review"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "check_review",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Check Review",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_4 == 0"
+  },
+  {
+   "fieldname": "keterangan_review",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Keterangan Review",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_4 == 0"
+  },
+  {
+   "fieldname": "konfirmasi_section",
+   "fieldtype": "Section Break",
+   "label": "Konfirmasi"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "check_konfirmasi",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Check Konfirmasi",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_ == 0"
+  },
+  {
+   "fieldname": "keterangan_konfirmasi",
+   "fieldtype": "Text",
+   "label": "Keterangan Konfirmasi",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_5 == 0"
+  },
+  {
+   "fieldname": "sumber_document",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Sumber Document",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sumber_document_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Sumber Document Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-20 07:56:51.950342",
+ "modified_by": "Administrator",
+ "module": "addons",
+ "name": "Confirmation Document Item PR",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

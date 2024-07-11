@@ -1,0 +1,279 @@
+{
+ "_liked_by": "[\"arut@das.com\"]",
+ "actions": [],
+ "creation": "2021-04-27 11:12:10.179971",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "is_use_qr_code",
+  "rencana_kirim_section",
+  "check_rencana_kirim",
+  "keterangan_rencana_kirim",
+  "check_stock_section",
+  "qty_rencana_kirim",
+  "qr_qty_rencana_kirim",
+  "qr_qty_rencana_kirim_qty",
+  "qr_manual_qty_rencana_kirim",
+  "checking_stock",
+  "keterangan_checking_stock",
+  "check_muat_section",
+  "check_qty_muat",
+  "qty_muat",
+  "qr_qty_muat",
+  "qr_qty_muat_qty",
+  "qr_manual_qty_muat",
+  "keterangan_muat",
+  "sb_bk",
+  "batal_kirim",
+  "qty_batal_kirim",
+  "validasi_section",
+  "check_validasi",
+  "keterangan_validasi",
+  "konfirmasi_section",
+  "check_konfirmasi",
+  "keterangan_konfirmasi",
+  "sumber_document",
+  "sumber_document_name"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_use_qr_code",
+   "fieldtype": "Check",
+   "label": "Is Use QR Code"
+  },
+  {
+   "fieldname": "rencana_kirim_section",
+   "fieldtype": "Section Break",
+   "label": "Rencana Kirim"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "check_rencana_kirim",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Check Rencana Kirim",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_1 == 0"
+  },
+  {
+   "fieldname": "keterangan_rencana_kirim",
+   "fieldtype": "Text",
+   "label": "Keterangan Rencana Kirim",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_1 == 0"
+  },
+  {
+   "fieldname": "check_stock_section",
+   "fieldtype": "Section Break",
+   "label": "Check Stock"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty_rencana_kirim",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Rencana Kirim",
+   "no_copy": 1,
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_2 == 0"
+  },
+  {
+   "fieldname": "qr_qty_rencana_kirim",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "QR Qty Rencana Kirim",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_qty_rencana_kirim_qty",
+   "fieldtype": "Small Text",
+   "label": "QR Qty Rencana Kirim + Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_manual_qty_rencana_kirim",
+   "fieldtype": "Small Text",
+   "label": "QR Manual Qty Rencana Kirim",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "checking_stock",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Checking Stock",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_2 == 0"
+  },
+  {
+   "fieldname": "keterangan_checking_stock",
+   "fieldtype": "Text",
+   "label": "Keterangan Checking Stock",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_2 == 0"
+  },
+  {
+   "fieldname": "check_muat_section",
+   "fieldtype": "Section Break",
+   "label": "Check Muat"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "check_qty_muat",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Check Qty Muat",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_3 == 0"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty_muat",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Muat",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_3 == 0"
+  },
+  {
+   "fieldname": "qr_qty_muat",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "QR Qty Muat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_qty_muat_qty",
+   "fieldtype": "Small Text",
+   "label": "QR Qty Muat + Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_manual_qty_muat",
+   "fieldtype": "Small Text",
+   "label": "QR Manual Qty Muat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "keterangan_muat",
+   "fieldtype": "Text",
+   "label": "Keterangan Muat",
+   "read_only_depends_on": "eval:parent.in_3 == 0"
+  },
+  {
+   "depends_on": "eval:parent.chosen_type == \"Delivery Note\"",
+   "fieldname": "sb_bk",
+   "fieldtype": "Section Break",
+   "label": "Batal Kirim"
+  },
+  {
+   "default": "0",
+   "fieldname": "batal_kirim",
+   "fieldtype": "Check",
+   "label": "Batal Kirim",
+   "read_only_depends_on": "eval:parent.in_3 == 0"
+  },
+  {
+   "fieldname": "qty_batal_kirim",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Qty Batal Kirim",
+   "read_only": 1
+  },
+  {
+   "fieldname": "validasi_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Validasi"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "check_validasi",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Check Validasi",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_4 == 0"
+  },
+  {
+   "fieldname": "keterangan_validasi",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Keterangan Validasi",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_4 == 0"
+  },
+  {
+   "fieldname": "konfirmasi_section",
+   "fieldtype": "Section Break",
+   "label": "Konfirmasi"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "check_konfirmasi",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Check Konfirmasi",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_5 == 0"
+  },
+  {
+   "fieldname": "keterangan_konfirmasi",
+   "fieldtype": "Text",
+   "label": "Keterangan Konfirmasi",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.in_5 == 0"
+  },
+  {
+   "fieldname": "sumber_document",
+   "fieldtype": "Data",
+   "label": "Sumber Document",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sumber_document_name",
+   "fieldtype": "Data",
+   "label": "Sumber Document Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-20 07:56:45.681395",
+ "modified_by": "Administrator",
+ "module": "addons",
+ "name": "Confirmation Document Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
